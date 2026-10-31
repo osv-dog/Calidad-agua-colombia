@@ -1,0 +1,1 @@
+-- SELECT COUNT(*) FROM agua_raw;
