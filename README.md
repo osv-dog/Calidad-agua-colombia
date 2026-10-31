@@ -2,8 +2,8 @@
 Proyecto final - Minería de Datos (Electiva IV)
 
 ## Integrantes
-- Nombre 1 (usuario GitHub)
-- Nombre 2 (usuario GitHub)
+- Nombre 1 (Crsitian Marquez)
+- Nombre 2 (Osvaldo Ospino)
 
 ## Estructura del repositorio
 | Carpeta | Contenido |
@@ -25,4 +25,4 @@ Proyecto final - Minería de Datos (Electiva IV)
 
 ## Fuente de datos
 Portal Nacional de Datos Abiertos (datos.gov.co), conjunto nxt2-39c3.
-Fecha de descarga: ___/___/2026
+Fecha de descarga: 30/10/2026
