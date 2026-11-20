@@ -11,18 +11,18 @@ import streamlit as st
 # Paleta cromática oficial normalizada para niveles de riesgo (Resolución 2115 de 2007)
 PALETA_RIESGO: Dict[str, str] = {
     "Sin riesgo": "#27ae60",               # Verde sanitario
-    "Riesgo bajo": "#f39c12",              # Amarillo / ámbar
+    "Bajo riesgo": "#f39c12",              # Amarillo / ámbar
     "Riesgo medio": "#e67e22",             # Naranja preventivo
-    "Riesgo alto": "#e74c3c",              # Rojo crítico
+    "Alto riesgo": "#e74c3c",              # Rojo crítico
     "Inviable sanitariamente": "#8e44ad",  # Púrpura sanitario de alarma máxima
     "No Disponible": "#95a5a6",            # Gris neutro para valores sin dato
 }
 
 ORDEN_RIESGO: List[str] = [
     "Sin riesgo",
-    "Riesgo bajo",
+    "Bajo riesgo",
     "Riesgo medio",
-    "Riesgo alto",
+    "Alto riesgo",
     "Inviable sanitariamente",
 ]
 
@@ -98,7 +98,7 @@ def crear_histograma_frecuencias(
         color_discrete_sequence=["#2980b9"],
     )
     fig_hist.add_vline(x=5.0, line_dash="dash", line_color="#27ae60", annotation_text="Sin riesgo (5%)")
-    fig_hist.add_vline(x=35.0, line_dash="dash", line_color="#e67e22", annotation_text="Riesgo alto (35%)")
+    fig_hist.add_vline(x=35.0, line_dash="dash", line_color="#e67e22", annotation_text="Alto riesgo (35%)")
     fig_hist.add_vline(x=80.0, line_dash="dash", line_color="#8e44ad", annotation_text="Inviable (80%)")
     fig_hist.update_layout(height=420, margin=dict(l=20, r=20, t=40, b=30))
     return fig_hist

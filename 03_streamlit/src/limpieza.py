@@ -15,9 +15,9 @@ def clasificar_riesgo_resolucion_2115(valor: Optional[float]) -> Optional[str]:
     """
     Recalcula y clasifica el nivel de riesgo del agua según la Resolución 2115 de 2007 (Art. 15):
       - 0.0  a  5.0 %: Sin riesgo
-      - 5.1  a 14.0 %: Riesgo bajo
+      - 5.1  a 14.0 %: Bajo riesgo
       - 14.1 a 35.0 %: Riesgo medio
-      - 35.1 a 80.0 %: Riesgo alto
+      - 35.1 a 80.0 %: Alto riesgo
       - 80.1 a 100.0%: Inviable sanitariamente
     Retorna None si el valor es nulo (ND).
     """
@@ -27,11 +27,11 @@ def clasificar_riesgo_resolucion_2115(valor: Optional[float]) -> Optional[str]:
     if val <= 5.0:
         return "Sin riesgo"
     elif val <= 14.0:
-        return "Riesgo bajo"
+        return "Bajo riesgo"
     elif val <= 35.0:
         return "Riesgo medio"
     elif val <= 80.0:
-        return "Riesgo alto"
+        return "Ato riesgo"
     else:
         return "Inviable sanitariamente"
 

@@ -166,7 +166,7 @@ with mcol1:
 with mcol2:
     st.metric("Departamentos Monitoreados", df_completo["Departamento"].nunique())
 with mcol3:
-    n_mun = df_completo[~df_completo["Es_Departamental"]]["Municipio"].nunique()
+    n_mun = df_completo[~df_completo["Es_Departamental"]]["MunicipioCodigo"].nunique()
     st.metric("Municipios Reportantes", n_mun)
 with mcol4:
     st.metric("Filas Consolidadas (#TODOS)", int(df_completo["Es_Departamental"].sum()))
